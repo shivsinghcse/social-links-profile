@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #141414;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+}
+
+.profile-card{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: #1f1f1f;
+    border-radius: 1rem;
+}
+
+.profile-img{
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.username{
+    color: #fff;
+    margin-top: 1.8rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+}
+.user-location{
+    color: #c5f82a;
+    margin: 0;
+    font-weight: 600;
+}
+
+.bio{
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.btn{
+    background: #333;
+    border: none;
+    color: #fff;
+    margin-bottom: 0.8rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: #c5f82a;
+    color: #141414;
+    font-weight: 600;
+}
+
+/* mobile responsive  */
+
+@media screen and (max-width: 26.6rem){
+    .profile-card{
+        width: 70%;
+        padding: 1.5rem;
+        border-radius: 0.8rem;
+    }
+
+    .profile-img{
+        width: 6rem;
+    }
+
+    .username{
+        margin-top: 1.4rem;
+        margin-bottom: 1.1rem;
+        font-size: 1.4rem;
+    }
+    .user-location{
+        font-size: 0.8rem;
+    }
+
+    .bio{
+            font-size: 0.8rem;
+        }
+
+    .links{
+        width: 100%;
+        margin-top: 1.8rem;
+    }
+
+    .btn{
+        padding: 0.8rem;
+        font-size: 0.8rem;
+        border-radius: 0.4rem;
+    }
+
+}
